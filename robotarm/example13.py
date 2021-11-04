@@ -6,8 +6,7 @@ robotArm.randomLevel(1,7)
 # Jouw python instructies zet je vanaf hier:
 
 rounds = 0
-while True:
-    robotArm.grab()
+while robotArm.grab():
     scan = robotArm.scan()
     if scan != "":
         rounds += 1
@@ -16,8 +15,6 @@ while True:
         robotArm.drop()
         for x in range(0,rounds):
             robotArm.moveLeft()
-    else:
-        break
 
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()
