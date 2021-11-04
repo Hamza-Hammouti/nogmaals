@@ -9,8 +9,7 @@ for x in range(9):
 for o in range(8):
     for x in range(2):
         robotArm.moveLeft()    
-    robotArm.grab()
-    for x in range(1):
+        robotArm.grab()
         robotArm.moveRight()
         robotArm.drop()
 
